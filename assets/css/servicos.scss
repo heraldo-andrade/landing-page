@@ -1,0 +1,35 @@
+.servicos{
+	background: #fbfbfb url(../img/bg-servicos.jpg) no-repeat;
+	background-size: cover;
+	text-align: center;
+	.centro{
+		padding: 65px $padding-padrao;
+	}
+	li{
+		width: $col-4;
+		padding: $padding-padrao;
+		line-height: 25px;
+		color: #434343;
+		font-size: 18px;
+		&:before{
+			display: block;
+			margin-bottom: $padding-padrao;
+			font-size: 78px;
+			color: $color-azul-claro;
+			@include icon-solid();
+		}
+		&:nth-child(1):before{
+			content: '\f108';
+		}
+		&:nth-child(2):before{
+			content: '\f080';
+		}
+		&:nth-child(3):before{
+			content: '\f121';
+		}
+		&:nth-child(4):before{
+			content: '\f085';
+		}
+	}
+	
+}

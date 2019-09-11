@@ -5,12 +5,14 @@ $col-4: 25%;
 $motion: all 250ms ease 0s;;
 
 $color-branco: #fff;
+$color-azul-claro: #2c698d;
 
 $padding-padrao: 25px;
 
 $bg-branco: $color-branco;
 $bg-azul-escuro: #272643;
-$bg-azul-claro: #2c698d;
+$bg-azul-claro: $color-azul-claro;
+
 @mixin bg-gradient(){
 	background: $bg-azul-claro;
 	background: -moz-linear-gradient(top,  $bg-azul-claro 0%, #468ab2 100%);
@@ -26,4 +28,9 @@ $bg-azul-claro: #2c698d;
 	left: $left;
 	right: 0px;
 	margin: auto;
+}
+
+@mixin icon-solid(){
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
 }

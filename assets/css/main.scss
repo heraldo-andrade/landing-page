@@ -31,7 +31,9 @@ h1{
 }
 h2{
 	font-size: 40px;
+	text-align: center;
 	text-transform: uppercase;
+	margin-bottom: 60px;
 	@if lightness($bg-branco) < 50 {
 		color: #ffffff;
 	} @else {
