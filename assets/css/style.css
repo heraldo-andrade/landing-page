@@ -503,6 +503,8 @@ h2 {
     color: #2c698d; }
 
 footer {
-  text-align: center; }
+  text-align: center;
+  color: #fff;
+  padding: 50px 25px; }
 
 /*# sourceMappingURL=style.css.map */
