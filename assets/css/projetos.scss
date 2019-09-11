@@ -1,0 +1,31 @@
+.projetos{
+	background: $bg-branco;
+	.centro{
+		padding: 60px $padding-padrao;
+	}
+	ul{
+		max-width: 1125px;
+		margin: auto;
+	}
+	.slick-arrow{
+		width: 60px;
+    	height: 60px;
+	}
+	.slick-arrow:before{
+		color: $color-azul-claro;
+		font-size: 60px;
+		@include icon-solid();
+	}
+	.slick-prev{
+    	left: -70px;
+		&:before{
+			content: '\f104';
+		}
+	}
+	.slick-next{
+		right: -70px;
+		&:before{
+			content: '\f105';
+		}
+	}
+}
