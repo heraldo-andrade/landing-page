@@ -435,15 +435,24 @@ header {
   text-align: center; }
   .servicos .centro {
     padding: 65px 25px; }
+    @media screen and (max-width: 900px) {
+      .servicos .centro {
+        padding: 50px 25px; } }
+  .servicos .d-flex {
+    flex-wrap: wrap; }
   .servicos li {
     width: 25%;
     padding: 25px;
     line-height: 25px;
     color: #434343;
-    font-size: 18px; }
+    font-size: 18px;
+    box-sizing: border-box; }
     @media screen and (max-width: 900px) {
       .servicos li {
         width: 50%; } }
+    @media screen and (max-width: 500px) {
+      .servicos li {
+        width: 100%; } }
     .servicos li:before {
       height: 60px;
       display: block;
@@ -627,12 +636,9 @@ h2 {
 
 footer {
   text-align: center;
-<<<<<<< HEAD
   color: #fff;
-  padding: 50px 25px; }
-=======
+  padding: 50px 25px;
   padding: 50px 25px;
   color: #fff; }
->>>>>>> 1565bf9e75416f864d42c58839c6cf75b01e2f32
 
 /*# sourceMappingURL=style.css.map */

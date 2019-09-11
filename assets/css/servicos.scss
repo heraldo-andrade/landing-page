@@ -4,6 +4,12 @@
 	text-align: center;
 	.centro{
 		padding: 65px $padding-padrao;
+		@media screen and (max-width: 900px) {
+			padding: 50px $padding-padrao;
+		}
+	}
+	.d-flex{
+		flex-wrap: wrap;
 	}
 	li{
 		width: $col-4;
@@ -11,8 +17,12 @@
 		line-height: 25px;
 		color: #434343;
 		font-size: 18px;
+		box-sizing: border-box;
 		@media screen and (max-width: 900px) {
 			width: $col-2;
+		}
+		@media screen and (max-width: 500px) {
+			width: $col-1;
 		}
 		&:before{
 			height:60px;
