@@ -5,19 +5,37 @@
 	color: $color-branco;
 	.centro{
 		padding: 85px $padding-padrao;
+		@media screen and (max-width: 800px) {
+			@include flex-column-center();
+			padding: 50px $padding-padrao;
+			text-align: center;
+		}
 	}
 	h1{
 		max-width: 580px;
 		margin-bottom: $padding-padrao;
 		line-height: 50px;
+		@media screen and (max-width: 1070px) {
+			font-size: 35px;
+		}
+		@media screen and (max-width: 800px) {
+			max-width: $col-1;
+		}
 	}
 	.d-flex{
 		align-items: center;
 		.col{
 			width: $col-2;
+			@media screen and (max-width: 800px) {
+				width: $col-1;
+			}
 		}
 		.col-video{
 			position: relative;
+			padding: 0px 25px;
+			@media screen and (max-width: 800px) {
+				margin-top: 25px;
+			}
 			.bt-play{
 				width: 135px;
 				height: 135px;
@@ -27,6 +45,10 @@
 				transform: scale(1);
 				transition: $motion;
 				@include align-center(0px);
+				@media screen and (max-width: 600px) {
+					width: 90px;
+					height: 90px;
+				}
 				&:before{
 					content:'';
 					width: 135px;
@@ -34,6 +56,10 @@
 					border: 3px solid $color-branco;
 					border-radius: 50%;
 					@include align-center(0px);
+					@media screen and (max-width: 600px) {
+						width: 90px;
+						height: 90px;
+					}
 				}
 				&:after{
 					content: '';
@@ -43,6 +69,11 @@
 				    border-bottom: 24px solid transparent;
 				    border-left: 35px solid #fff;
 					@include align-center(10px);
+					@media screen and (max-width: 600px) {
+						border-top: 14px solid transparent;
+					    border-bottom: 14px solid transparent;
+					    border-left: 22px solid #fff;
+					}
 				}
 				&:hover{
 					transform: scale(1.1);
@@ -52,16 +83,25 @@
 			figure{
 				max-width: 578px;
 				border: 3px solid $color-branco;
-				margin: auto;				
+				margin: auto;
+				@media screen and (max-width: 800px) {
+					max-width: $col-1;
+				}				
 				img{
 					width: 100%;
 					height: auto;
 				}
 			}
+			@media screen and (max-width: 800px) {
+				width: $col-1;
+			}
 		}
 	}
 	p{
 		font-size: 22px;
+		line-height: 30px;
 	}
-	
+	.modal{
+		display: none;
+	}
 }

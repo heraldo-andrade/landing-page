@@ -274,6 +274,10 @@ header {
   background: #fff; }
   header .centro {
     overflow: auto; }
+    @media screen and (max-width: 390px) {
+      header .centro {
+        flex-direction: column;
+        align-items: center; } }
 
 .social-links {
   flex: 1;
@@ -299,6 +303,9 @@ header {
     .social-links a:hover {
       background: #2c698d;
       transition: all 250ms ease 0s; }
+    @media screen and (max-width: 390px) {
+      .social-links a {
+        margin: 0px 8px; } }
   .social-links a:before {
     font-size: 22px; }
   .social-links .facebook:before {
@@ -307,6 +314,10 @@ header {
     content: '\f16d'; }
   .social-links .linkedin:before {
     content: '\f0e1'; }
+  @media screen and (max-width: 390px) {
+    .social-links {
+      align-self: center;
+      margin-top: 25px; } }
 
 .banner {
   background: #2c698d url(../img/bg-banner.jpg) no-repeat;
@@ -315,16 +326,35 @@ header {
   color: #fff; }
   .banner .centro {
     padding: 85px 25px; }
+    @media screen and (max-width: 800px) {
+      .banner .centro {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 25px;
+        text-align: center; } }
   .banner h1 {
     max-width: 580px;
     margin-bottom: 25px;
     line-height: 50px; }
+    @media screen and (max-width: 1070px) {
+      .banner h1 {
+        font-size: 35px; } }
+    @media screen and (max-width: 800px) {
+      .banner h1 {
+        max-width: 100%; } }
   .banner .d-flex {
     align-items: center; }
     .banner .d-flex .col {
       width: 50%; }
+      @media screen and (max-width: 800px) {
+        .banner .d-flex .col {
+          width: 100%; } }
     .banner .d-flex .col-video {
-      position: relative; }
+      position: relative;
+      padding: 0px 25px; }
+      @media screen and (max-width: 800px) {
+        .banner .d-flex .col-video {
+          margin-top: 25px; } }
       .banner .d-flex .col-video .bt-play {
         width: 135px;
         height: 135px;
@@ -339,6 +369,10 @@ header {
         left: 0px;
         right: 0px;
         margin: auto; }
+        @media screen and (max-width: 600px) {
+          .banner .d-flex .col-video .bt-play {
+            width: 90px;
+            height: 90px; } }
         .banner .d-flex .col-video .bt-play:before {
           content: '';
           width: 135px;
@@ -351,6 +385,10 @@ header {
           left: 0px;
           right: 0px;
           margin: auto; }
+          @media screen and (max-width: 600px) {
+            .banner .d-flex .col-video .bt-play:before {
+              width: 90px;
+              height: 90px; } }
         .banner .d-flex .col-video .bt-play:after {
           content: '';
           width: 0px;
@@ -364,6 +402,11 @@ header {
           left: 10px;
           right: 0px;
           margin: auto; }
+          @media screen and (max-width: 600px) {
+            .banner .d-flex .col-video .bt-play:after {
+              border-top: 14px solid transparent;
+              border-bottom: 14px solid transparent;
+              border-left: 22px solid #fff; } }
         .banner .d-flex .col-video .bt-play:hover {
           transform: scale(1.1);
           transition: all 250ms ease 0s; }
@@ -371,11 +414,20 @@ header {
         max-width: 578px;
         border: 3px solid #fff;
         margin: auto; }
+        @media screen and (max-width: 800px) {
+          .banner .d-flex .col-video figure {
+            max-width: 100%; } }
         .banner .d-flex .col-video figure img {
           width: 100%;
           height: auto; }
+      @media screen and (max-width: 800px) {
+        .banner .d-flex .col-video {
+          width: 100%; } }
   .banner p {
-    font-size: 22px; }
+    font-size: 22px;
+    line-height: 30px; }
+  .banner .modal {
+    display: none; }
 
 .servicos {
   background: #fbfbfb url(../img/bg-servicos.jpg) no-repeat;

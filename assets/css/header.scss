@@ -2,6 +2,9 @@ header{
 	background: $bg-branco;
 	.centro{
 		overflow: auto;
+		@media screen and (max-width: 390px) {
+			@include flex-column-center();
+		}
 	}
 }
 .social-links{
@@ -30,6 +33,9 @@ header{
 			background: $bg-azul-claro;
 			transition: $motion;
 		}
+		@media screen and (max-width: 390px) {
+			margin: 0px 8px;
+		}
 	}
 	a:before{
 		font-size: 22px;
@@ -42,5 +48,9 @@ header{
 	}
 	.linkedin:before{
 		content: '\f0e1';
+	}
+	@media screen and (max-width: 390px) {
+		align-self: center;
+		margin-top: 25px;
 	}
 }
