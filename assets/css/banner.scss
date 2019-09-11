@@ -3,7 +3,9 @@
 	background-size: cover;
 	background-attachment: fixed;
 	color: $color-branco;
-	padding: 85px $padding-padrao;
+	.centro{
+		padding: 85px $padding-padrao;
+	}
 	h1{
 		max-width: 580px;
 		margin-bottom: $padding-padrao;
@@ -14,8 +16,52 @@
 		.col{
 			width: $col-2;
 		}
+		.col-video{
+			position: relative;
+			.bt-play{
+				width: 135px;
+				height: 135px;
+				z-index: 2;
+				cursor: pointer;
+				font-size: 0px;
+				transform: scale(1);
+				transition: $motion;
+				@include align-center(0px);
+				&:before{
+					content:'';
+					width: 135px;
+					height: 135px;
+					border: 3px solid $color-branco;
+					border-radius: 50%;
+					@include align-center(0px);
+				}
+				&:after{
+					content: '';
+				    width: 0px;
+				    height: 0px;
+				    border-top: 24px solid transparent;
+				    border-bottom: 24px solid transparent;
+				    border-left: 35px solid #fff;
+					@include align-center(10px);
+				}
+				&:hover{
+					transform: scale(1.1);
+					transition: $motion;
+				}
+			}
+			figure{
+				max-width: 578px;
+				border: 3px solid $color-branco;
+				margin: auto;				
+				img{
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
 	}
 	p{
 		font-size: 22px;
 	}
+	
 }
