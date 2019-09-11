@@ -7,3 +7,38 @@
 @import "projetos.scss";
 @import "depoimentos.scss";
 @import "contato.scss";
+
+body,html{
+	width: 100%;
+    height: 100%;
+	font-family: arial;
+	font-size: 16px;
+	background: $bg-azul-escuro;
+}
+.centro{
+	max-width: 1280px;
+	width: 100%;
+	margin: auto;
+	padding: $padding-padrao;
+	box-sizing: border-box;
+}
+.d-flex{
+	display: flex;
+}
+h1{
+	font-size: 45px;
+}
+h2{
+	font-size: 40px;
+	@if lightness($bg-branco) < 50 {
+		color: #ffffff;
+	} @else {
+		color: #272643;	
+	}
+	span{
+		color: #2c698d;
+	}
+}
+footer{
+	text-align: center;
+}
