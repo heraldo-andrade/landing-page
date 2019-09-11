@@ -5,8 +5,8 @@ $(window).load(function() {
     dots: false,
     autoplay: false,
     speed: 800,
-    slidesToShow: 5,
-    slidesToScroll: 5,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     adaptiveHeight: true,
     responsive: [
     {
