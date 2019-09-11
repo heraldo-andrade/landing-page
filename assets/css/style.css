@@ -387,6 +387,57 @@ header {
     .projetos .slick-next:before {
       content: '\f105'; }
 
+.depoimentos {
+  background: #2c698d;
+  background: -moz-linear-gradient(top, #2c698d 0%, #468ab2 100%);
+  background: -webkit-linear-gradient(top, #2c698d 0%, #468ab2 100%);
+  background: linear-gradient(to bottom, #2c698d 0%, #468ab2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bg-azul-claro', endColorstr='#468ab2',GradientType=0 ); }
+  .depoimentos .centro {
+    padding: 60px 25px 0 25px; }
+  .depoimentos h2 {
+    color: #fff; }
+  .depoimentos .d-flex {
+    justify-content: space-around; }
+  .depoimentos li {
+    position: relative;
+    max-width: 240px;
+    text-align: center;
+    line-height: 25px;
+    color: #fff;
+    padding-bottom: 80px; }
+    .depoimentos li p {
+      margin-bottom: 15px; }
+    .depoimentos li:before {
+      content: '"';
+      font-family: arial, verdana;
+      font-size: 270px;
+      opacity: 0.1;
+      position: absolute;
+      top: -40px;
+      left: -40px;
+      width: 100px;
+      height: 100px;
+      line-height: 230px; }
+    .depoimentos li:hover figure {
+      transform: scale(1.05);
+      transition: all 250ms ease 0s; }
+  .depoimentos figure {
+    width: 128px;
+    height: 128px;
+    margin: auto;
+    position: absolute;
+    z-index: 2;
+    bottom: -64px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    overflow: hidden;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    transform: scale(1);
+    transition: all 250ms ease 0s; }
+
 body, html {
   width: 100%;
   height: 100%;

@@ -1,0 +1,55 @@
+.depoimentos{
+	.centro{
+		padding: 60px $padding-padrao 0 $padding-padrao;
+	}
+	@include bg-gradient();
+	h2{
+		color: $color-branco;
+	}
+	.d-flex{
+		justify-content: space-around;
+	}
+	li{
+		position: relative;
+		max-width: 240px;
+		text-align: center;
+		line-height: 25px;
+		color: $color-branco;
+		padding-bottom: 80px;
+		p{
+			margin-bottom: 15px;
+		}
+		&:before{
+			content: '"';
+			font-family: arial, verdana;
+			font-size: 270px;
+			opacity: 0.1;
+			position: absolute;
+			top: -40px;
+			left: -40px;
+			width: 100px;
+		    height: 100px;
+		    line-height: 230px;
+		}
+		&:hover figure{
+			transform: scale(1.05);
+			transition: $motion;
+		}
+	}
+	figure{
+		width:128px;
+		height: 128px;
+		margin: auto;
+		position: absolute;
+		z-index: 2;
+    	bottom: -64px;
+    	border-radius: 50%;
+    	border: 1px solid $color-branco;
+    	overflow: hidden;
+    	left: 0px;
+    	right: 0px;
+    	margin: auto;
+    	transform: scale(1);
+		transition: $motion;
+	}
+}
