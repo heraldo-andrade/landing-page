@@ -1,10 +1,18 @@
+$col-2: 50%;
+$col-3: 33.33%;
+$col-4: 25%;
+
+$color-branco: #fff;
+
 $padding-padrao: 25px;
-$bg-branco: #fff;
+
+$bg-branco: $color-branco;
 $bg-azul-escuro: #272643;
+$bg-azul-claro: #2c698d;
 @mixin bg-gradient(){
-	background: #2c698d;
-	background: -moz-linear-gradient(top,  #2c698d 0%, #468ab2 100%);
-	background: -webkit-linear-gradient(top,  #2c698d 0%,#468ab2 100%);
-	background: linear-gradient(to bottom,  #2c698d 0%,#468ab2 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c698d', endColorstr='#468ab2',GradientType=0 );
+	background: $bg-azul-claro;
+	background: -moz-linear-gradient(top,  $bg-azul-claro 0%, #468ab2 100%);
+	background: -webkit-linear-gradient(top,  $bg-azul-claro 0%,#468ab2 100%);
+	background: linear-gradient(to bottom,  $bg-azul-claro 0%,#468ab2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$bg-azul-claro', endColorstr='#468ab2',GradientType=0 );
 }

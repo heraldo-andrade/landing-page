@@ -1,0 +1,21 @@
+.banner{
+	background: $bg-azul-claro url(../img/bg-banner.jpg) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	color: $color-branco;
+	padding: 85px $padding-padrao;
+	h1{
+		max-width: 580px;
+		margin-bottom: $padding-padrao;
+		line-height: 50px;
+	}
+	.d-flex{
+		align-items: center;
+		.col{
+			width: $col-2;
+		}
+	}
+	p{
+		font-size: 22px;
+	}
+}
