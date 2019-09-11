@@ -13,6 +13,9 @@ $bg-branco: $color-branco;
 $bg-azul-escuro: #272643;
 $bg-azul-claro: $color-azul-claro;
 
+$font-bold: 'open_sansextrabold';
+$font-light: 'open_sanslight';
+
 @mixin bg-gradient(){
 	background: $bg-azul-claro;
 	background: -moz-linear-gradient(top,  $bg-azul-claro 0%, #468ab2 100%);
