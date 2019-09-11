@@ -4,7 +4,22 @@
   font-weight: 900;
   font-display: auto;
   src: url("../font/fa-solid-900.eot");
-  src: url("../font/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../font/fa-solid-900.woff2") format("woff2"), url("../font/fa-solid-900.woff") format("woff"), url("../font/fa-solid-900.ttf") format("truetype"), url("../font/fa-solid-900.svg#fontawesome") format("svg");
+  src: url("../font/fa-solid-900.eot?#iefix") format("embedded-opentype"),
+  url("../font/fa-solid-900.woff2") format("woff2"),
+  url("../font/fa-solid-900.woff") format("woff"),
+  url("../font/fa-solid-900.ttf") format("truetype"),
+  url("../font/fa-solid-900.svg#fontawesome") format("svg");
+}
+@font-face {
+	font-family: 'FontBrands';
+	font-style: normal;
+	font-weight: normal;
+	src: url("../font/fa-brands-400.eot");
+	src: url("../font/fa-brands-400.eot?#iefix") format("embedded-opentype"), 
+	url("../font/fa-brands-400.woff2") format("woff2"), 
+	url("../font/fa-brands-400.woff") format("woff"), 
+	url("../font/fa-brands-400.ttf") format("truetype"), 
+	url("../font/fa-brands-400.svg#fontawesome") format("svg"); 
 }
 @font-face {
     font-family: 'open_sanslight';

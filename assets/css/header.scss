@@ -9,8 +9,38 @@ header{
     align-self: flex-end;
     text-align: right;
     font-size: 1px;
+    @include icon-brands();
 	li{
 		display: inline-block;
-		font-size: 16px;
+		font-size: 0px;
+	}
+	a{
+		width: 40px;
+		height: 40px;
+		background: $bg-azul-escuro;
+		text-decoration: none;
+		color: $color-branco;
+		display: block;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 40px;
+		margin-left: 15px;
+		transition: $motion;
+		&:hover{
+			background: $bg-azul-claro;
+			transition: $motion;
+		}
+	}
+	a:before{
+		font-size: 22px;
+	}
+	.facebook:before{
+		content: '\f39e';
+	}
+	.instagram:before{
+		content: '\f16d';
+	}
+	.linkedin:before{
+		content: '\f0e1';
 	}
 }

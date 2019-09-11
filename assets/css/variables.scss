@@ -37,3 +37,6 @@ $font-light: 'open_sanslight';
 	font-family: 'Font Awesome 5 Free';
 	font-weight: 900;
 }
+@mixin icon-brands(){
+	font-family: 'FontBrands';
+}

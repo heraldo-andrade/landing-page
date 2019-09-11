@@ -49,6 +49,12 @@ table {
   src: url("../font/fa-solid-900.eot");
   src: url("../font/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../font/fa-solid-900.woff2") format("woff2"), url("../font/fa-solid-900.woff") format("woff"), url("../font/fa-solid-900.ttf") format("truetype"), url("../font/fa-solid-900.svg#fontawesome") format("svg"); }
 @font-face {
+  font-family: 'FontBrands';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../font/fa-brands-400.eot");
+  src: url("../font/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../font/fa-brands-400.woff2") format("woff2"), url("../font/fa-brands-400.woff") format("woff"), url("../font/fa-brands-400.ttf") format("truetype"), url("../font/fa-brands-400.svg#fontawesome") format("svg"); }
+@font-face {
   font-family: 'open_sanslight';
   src: url("../font/OpenSans-Light-webfont.eot");
   src: url("../font/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../font/OpenSans-Light-webfont.woff") format("woff"), url("../font/OpenSans-Light-webfont.ttf") format("truetype"), url("../font/OpenSans-Light-webfont.svg#open_sanslight") format("svg");
@@ -273,10 +279,34 @@ header {
   flex: 1;
   align-self: flex-end;
   text-align: right;
-  font-size: 1px; }
+  font-size: 1px;
+  font-family: 'FontBrands'; }
   .social-links li {
     display: inline-block;
-    font-size: 16px; }
+    font-size: 0px; }
+  .social-links a {
+    width: 40px;
+    height: 40px;
+    background: #272643;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 15px;
+    transition: all 250ms ease 0s; }
+    .social-links a:hover {
+      background: #2c698d;
+      transition: all 250ms ease 0s; }
+  .social-links a:before {
+    font-size: 22px; }
+  .social-links .facebook:before {
+    content: '\f39e'; }
+  .social-links .instagram:before {
+    content: '\f16d'; }
+  .social-links .linkedin:before {
+    content: '\f0e1'; }
 
 .banner {
   background: #2c698d url(../img/bg-banner.jpg) no-repeat;
