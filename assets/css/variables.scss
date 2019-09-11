@@ -1,3 +1,4 @@
+$col-1: 100%;
 $col-2: 50%;
 $col-3: 33.33%;
 $col-4: 25%;
@@ -12,6 +13,9 @@ $padding-padrao: 25px;
 $bg-branco: $color-branco;
 $bg-azul-escuro: #272643;
 $bg-azul-claro: $color-azul-claro;
+
+$font-bold: 'open_sansextrabold';
+$font-light: 'open_sanslight';
 
 @mixin bg-gradient(){
 	background: $bg-azul-claro;
@@ -33,4 +37,11 @@ $bg-azul-claro: $color-azul-claro;
 @mixin icon-solid(){
 	font-family: 'Font Awesome 5 Free';
 	font-weight: 900;
+}
+@mixin icon-brands(){
+	font-family: 'FontBrands';
+}
+@mixin flex-column-center(){
+	flex-direction: column;
+	align-items: center;
 }

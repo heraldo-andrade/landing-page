@@ -5,8 +5,8 @@ $(window).load(function() {
     dots: false,
     autoplay: false,
     speed: 800,
-    slidesToShow: 5,
-    slidesToScroll: 5,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     adaptiveHeight: true,
     responsive: [
     {
@@ -17,21 +17,21 @@ $(window).load(function() {
       }
     },
     {
-      breakpoint: 1350,
+      breakpoint: 1270,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
       }
     },
     {
-      breakpoint: 950,
+      breakpoint: 1070,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
       }
     },
     {
-      breakpoint: 700,
+      breakpoint: 720,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,

@@ -8,11 +8,13 @@
 <body>
 	<header>
 		<div class="centro d-flex">
-			<img class="logo" src="assets/img/logo.png" alt="Logo Native Design Studio">
+			<figure>
+				<img class="logo" src="assets/img/logo.png" alt="Logo Native Design Studio">
+			</figure>
 			<ul class="social-links">
-				<li><a href="https://br.linkedin.com/">Linkedin</a></li>
-				<li><a href="https://www.instagram.com/">Instagram</a></li>
-				<li><a href="https://www.facebook.com/">Facebook</a></li>
+				<li><a class="linkedin" href="https://br.linkedin.com/">Linkedin</a></li>
+				<li><a class="instagram" href="https://www.instagram.com/">Instagram</a></li>
+				<li><a class="facebook" href="https://www.facebook.com/">Facebook</a></li>
 			</ul>
 		</div>
 	</header>
@@ -25,14 +27,15 @@
 			<div class="col col-video">
 				<span class="bt-play">Play</span>
 				<figure>
-
 					<img src="assets/img/poster-video.jpg" alt="thumbnail do video de apresentação">
 				</figure>
-				<!-- <video width="578" height="303" controls poster="assets/img/poster-video.jpg">
-					<source src="assets/video/movie.mp4" type="video/mp4">
-					<source src="assets/video/movie.ogg" type="video/ogg">
-					Seu navegador não suparta a tag video.
-				</video> -->
+				<div class="modal">
+					<video class="video" width="578" height="303" controls poster="assets/img/poster-video.jpg">
+						<source src="assets/video/movie.mp4" type="video/mp4">
+						<source src="assets/video/movie.ogg" type="video/ogg">
+						Seu navegador não suparta a tag video.
+					</video>
+				</div>
 			</div>
 		</div>
 	</section>
