@@ -413,6 +413,26 @@ header {
   .projetos ul {
     max-width: 1125px;
     margin: auto; }
+    @media screen and (max-width: 1270px) {
+      .projetos ul {
+        max-width: 950px; } }
+    @media screen and (max-width: 1070px) {
+      .projetos ul {
+        max-width: 600px; } }
+    @media screen and (max-width: 720px) {
+      .projetos ul {
+        max-width: 300px; } }
+  .projetos .slick-dots li {
+    background: #d0d2d3;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px; }
+  .projetos .slick-dots li button:before {
+    content: '';
+    width: 15px;
+    height: 15px; }
+  .projetos .slick-dots .slick-active {
+    background: #2c698d; }
   .projetos .slick-arrow {
     width: 60px;
     height: 60px; }
@@ -425,6 +445,8 @@ header {
     left: -70px; }
     .projetos .slick-prev:before {
       content: '\f104'; }
+  .projetos .slick-slider li img {
+    margin: auto; }
   .projetos .slick-next {
     right: -70px; }
     .projetos .slick-next:before {
