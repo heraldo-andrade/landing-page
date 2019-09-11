@@ -1,0 +1,43 @@
+.contato{
+	.centro{
+		padding-top: 130px;
+	}
+	h2{
+		color: $color-branco;
+	}
+	form{
+		max-width: 875px;
+		margin: auto;
+	}
+	.col{
+		width: $col-2;
+		padding: 0px 15px;
+	}
+	input, textarea{
+		margin-bottom: 30px;
+		padding: 15px;
+		width: 100%;
+		box-sizing: border-box;
+		font-size: 16px;
+		font-family: arial, verdana;
+	}
+	textarea{
+		height: 216px;
+	}
+	button{
+		width: 235px;
+		padding: 15px;
+		background: $bg-azul-claro;
+		color: $color-branco;
+		font-size: 18px;
+		border: none;
+		cursor: pointer;
+		float: right;
+		transform: scale(1);
+		transition: $motion;
+		&:hover{
+			transform: scale(1.05);
+			transition: $motion;
+		}
+	}
+}
