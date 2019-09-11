@@ -474,6 +474,9 @@ header {
   background: #fff; }
   .projetos .centro {
     padding: 60px 25px; }
+    @media screen and (max-width: 900px) {
+      .projetos .centro {
+        padding: 50px 25px; } }
   .projetos ul {
     max-width: 1125px;
     margin: auto; }
@@ -486,17 +489,19 @@ header {
     @media screen and (max-width: 720px) {
       .projetos ul {
         max-width: 300px; } }
-  .projetos .slick-dots li {
-    background: #d0d2d3;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px; }
-  .projetos .slick-dots li button:before {
-    content: '';
-    width: 15px;
-    height: 15px; }
-  .projetos .slick-dots .slick-active {
-    background: #2c698d; }
+  .projetos .slick-dots {
+    bottom: -40px; }
+    .projetos .slick-dots li {
+      background: #d0d2d3;
+      border-radius: 50%;
+      width: 15px;
+      height: 15px; }
+    .projetos .slick-dots li button:before {
+      content: '';
+      width: 15px;
+      height: 15px; }
+    .projetos .slick-dots .slick-active {
+      background: #2c698d; }
   .projetos .slick-arrow {
     width: 60px;
     height: 60px; }

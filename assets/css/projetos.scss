@@ -2,6 +2,9 @@
 	background: $bg-branco;
 	.centro{
 		padding: 60px $padding-padrao;
+		@media screen and (max-width: 900px) {
+			padding: 50px $padding-padrao;
+		}
 	}
 	ul{
 		max-width: 1125px;
@@ -17,6 +20,7 @@
 		}
 	}
 	.slick-dots{
+		bottom: -40px;
 		li {
 			background: #d0d2d3;
 		    border-radius: 50%;
