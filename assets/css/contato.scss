@@ -11,8 +11,40 @@
 	form{
 		max-width: 875px;
 		margin: auto;
+		position: relative;
 		@media screen and (max-width: 1000px) {
 		    flex-direction: column;
+		}
+		div{
+			position: relative;
+			span{
+				position: absolute;
+			    top: -12px;
+			    font-size: 13px;
+			    right: 0px;
+			    color: #fff;
+			    padding: 5px 10px;
+			    background: #E15757;
+			    display: none;
+			}
+		}
+		.msg-error{
+			border: 2px solid #E15757;
+		}
+		.msg-sucess{
+			border: 2px solid #28A745;
+		}
+		#response{
+			display: none;
+		    position: absolute;
+		    bottom: -50px;
+		    width: 100%;
+		    box-sizing: border-box;
+		    padding: 8px 45px;
+		    background: #327942;
+		    left: 0px;
+		    text-align: center;
+		    color: #fff;
 		}
 	}
 	.col{

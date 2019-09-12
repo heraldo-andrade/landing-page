@@ -68,6 +68,10 @@ aptent taciti sociosqu ad.</li>
 				<li><img src="assets/img/projeto-8.jpg" alt="Projeto 8"></li>
 			</ul>
 		</div>
+		<div class="modal-projeto">
+			<button class="bt-fechar">Fechar</button>
+			<span class="mascara"></span>
+		</div>
 	</section>
 	<section class="depoimentos">
 		<div class="centro">
@@ -106,16 +110,29 @@ aptent taciti sociosqu ad.</li>
 	<section class="contato">
 		<div class="centro">
 			<h2>Contato</h2>
-			<form class="d-flex" action="">
+			<form id="form-contato" class="d-flex" action="" method="post">
 				<div class="col">
-					<input type="text" id="nome" name="nome" placeholder="Nome *">
-					<input type="email" id="email" name="email" placeholder="E-mail *">
-					<input type="text" id="fone" name="fone" placeholder="Telefone *">
+					<div>
+						<span class="msg-nome"></span>
+						<input type="text" id="nome" name="nome" placeholder="Nome *">
+					</div>
+					<div>
+						<span class="msg-email"></span>
+						<input type="email" id="email" name="email" placeholder="E-mail *">
+					</div>
+					<div>
+						<span class="msg-fone"></span>
+						<input type="text" id="fone" name="fone" placeholder="Telefone *">
+					</div>
 				</div>
 				<div class="col">
-					<textarea name="msg" id="msg" cols="30" rows="10" placeholder="Mensagem *"></textarea>
-					<button type="submit">Enviar</button>
+					<div>
+						<span class="msg-mensagem"></span>
+						<textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Mensagem *"></textarea>
+					</div>
+					<button id="bt-enviar" type="submit">Enviar</button>
 				</div>
+				<div id="response"></div>
 			</form>
 		</div>
 	</section>
@@ -126,5 +143,6 @@ aptent taciti sociosqu ad.</li>
 <script src="assets/js/jquery.1.12.3.min.js"></script>
 <script src="assets/js/slick.min.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/valida-form.js"></script>
 </body>
 </html>
