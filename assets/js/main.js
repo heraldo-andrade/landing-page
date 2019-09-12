@@ -67,10 +67,3 @@ function videoPause(){
   video.pause();
   $(".modal").fadeOut();
 }
-
-$(".slider-projetos li").each(function(index) {
-    $(this).on("click", function(){
-      let alt = $(this).find('img').attr('alt'); 
-      $('.modal-projeto').html('<button class="bt-fechar">Fechar</button><img src="" alt="'+ alt +'" /><span class="mascara"></span>');
-    });
-});
