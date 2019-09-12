@@ -50,3 +50,20 @@ $(window).load(function() {
     ]
   });
 });
+
+let video = document.querySelector('.video');
+
+$('.bt-play').click(function() {
+  video.play();
+  $(".modal").fadeIn(250);
+});
+$('.mascara').click(function() {
+  videoPause();
+});
+$('.bt-fechar').click(function(){
+  videoPause();
+});
+function videoPause(){
+  video.pause();
+  $(".modal").fadeOut();
+}

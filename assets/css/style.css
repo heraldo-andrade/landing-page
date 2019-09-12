@@ -41,6 +41,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+:focus {
+  outline: none; }
+
 @font-face {
   font-family: 'Font Awesome 5 Free';
   font-style: normal;
@@ -427,7 +430,46 @@ header {
     font-size: 22px;
     line-height: 30px; }
   .banner .modal {
-    display: none; }
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5; }
+    .banner .modal video {
+      max-width: 1024px;
+      height: auto;
+      width: 90%;
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      margin: auto;
+      top: 0px;
+      bottom: 0px;
+      z-index: 2; }
+    .banner .modal .mascara {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: rgba(0, 0, 0, 0.9); }
+    .banner .modal .bt-fechar {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: #fff;
+      z-index: 3;
+      background: none;
+      width: 50px;
+      height: 50px;
+      font-size: 0px;
+      border: none; }
+      .banner .modal .bt-fechar:before {
+        content: '\f00d';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        font-size: 30px;
+        cursor: pointer; }
 
 .servicos {
   background: #fbfbfb url(../img/bg-servicos.jpg) no-repeat;
