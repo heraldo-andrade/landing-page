@@ -1,6 +1,9 @@
 .contato{
 	.centro{
 		padding-top: 130px;
+		@media screen and (max-width: 1000px) {
+		    padding-top: 50px;
+		}
 	}
 	h2{
 		color: $color-branco;
@@ -8,10 +11,17 @@
 	form{
 		max-width: 875px;
 		margin: auto;
+		@media screen and (max-width: 1000px) {
+		    flex-direction: column;
+		}
 	}
 	.col{
 		width: $col-2;
 		padding: 0px 15px;
+		box-sizing: border-box;
+		@media screen and (max-width: 1000px) {
+		    width: $col-1;
+		}
 	}
 	input, textarea{
 		margin-bottom: 30px;
@@ -20,9 +30,10 @@
 		box-sizing: border-box;
 		font-size: 16px;
 		font-family: $font-light;
+		box-sizing: border-box;
 	}
 	textarea{
-		height: 216px;
+		height: 228px;
 	}
 	button{
 		width: 235px;
@@ -36,6 +47,9 @@
 		float: right;
 		transform: scale(1);
 		transition: $motion;
+		@media screen and (max-width: 460px) {
+		    width: 100%;
+		}
 		&:hover{
 			transform: scale(1.05);
 			transition: $motion;

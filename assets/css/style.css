@@ -609,23 +609,34 @@ header {
 
 .contato .centro {
   padding-top: 130px; }
+  @media screen and (max-width: 1000px) {
+    .contato .centro {
+      padding-top: 50px; } }
 .contato h2 {
   color: #fff; }
 .contato form {
   max-width: 875px;
   margin: auto; }
+  @media screen and (max-width: 1000px) {
+    .contato form {
+      flex-direction: column; } }
 .contato .col {
   width: 50%;
-  padding: 0px 15px; }
+  padding: 0px 15px;
+  box-sizing: border-box; }
+  @media screen and (max-width: 1000px) {
+    .contato .col {
+      width: 100%; } }
 .contato input, .contato textarea {
   margin-bottom: 30px;
   padding: 15px;
   width: 100%;
   box-sizing: border-box;
   font-size: 16px;
-  font-family: "open_sanslight"; }
+  font-family: "open_sanslight";
+  box-sizing: border-box; }
 .contato textarea {
-  height: 216px; }
+  height: 228px; }
 .contato button {
   width: 235px;
   padding: 15px;
@@ -638,6 +649,9 @@ header {
   float: right;
   transform: scale(1);
   transition: all 250ms ease 0s; }
+  @media screen and (max-width: 460px) {
+    .contato button {
+      width: 100%; } }
   .contato button:hover {
     transform: scale(1.05);
     transition: all 250ms ease 0s; }
@@ -671,6 +685,9 @@ h2 {
   text-transform: uppercase;
   margin-bottom: 60px;
   color: #272643; }
+  @media screen and (max-width: 460px) {
+    h2 {
+      font-size: 30px; } }
   h2 span {
     color: #2c698d; }
 
