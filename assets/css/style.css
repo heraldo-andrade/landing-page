@@ -533,29 +533,53 @@ header {
     color: #fff; }
   .depoimentos .d-flex {
     justify-content: space-around; }
+    @media screen and (max-width: 1000px) {
+      .depoimentos .d-flex {
+        flex-direction: column; } }
   .depoimentos li {
     position: relative;
     max-width: 240px;
     text-align: center;
     line-height: 25px;
     color: #fff;
-    padding-bottom: 80px; }
+    padding: 0px 25px 80px 25px; }
+    @media screen and (max-width: 1000px) {
+      .depoimentos li {
+        max-width: 100%;
+        text-align: left; } }
+    @media screen and (max-width: 450px) {
+      .depoimentos li {
+        text-align: center;
+        padding: 0px 25px 25px 25px;
+        margin-bottom: 45px;
+        border-bottom: 1px solid #679bbb; } }
+    .depoimentos li:last-child {
+      border-bottom: none; }
     .depoimentos li p {
-      margin-bottom: 15px; }
-    .depoimentos li:before {
-      content: '"';
-      font-family: arial, verdana;
-      font-size: 270px;
-      opacity: 0.1;
-      position: absolute;
-      top: -40px;
-      left: -40px;
-      width: 100px;
-      height: 100px;
-      line-height: 230px; }
+      margin-bottom: 15px;
+      position: relative; }
+      .depoimentos li p:before {
+        content: '"';
+        font-family: arial, verdana;
+        font-size: 270px;
+        opacity: 0.1;
+        position: absolute;
+        top: -40px;
+        left: -40px;
+        width: 100px;
+        height: 100px;
+        line-height: 230px; }
     .depoimentos li:hover figure {
       transform: scale(1.05);
       transition: all 250ms ease 0s; }
+    @media screen and (max-width: 1000px) {
+      .depoimentos li div {
+        max-width: calc(100% - 158px);
+        float: right; } }
+    @media screen and (max-width: 450px) {
+      .depoimentos li div {
+        max-width: 100%;
+        float: none; } }
   .depoimentos figure {
     width: 128px;
     height: 128px;
@@ -571,6 +595,17 @@ header {
     margin: auto;
     transform: scale(1);
     transition: all 250ms ease 0s; }
+    @media screen and (max-width: 1000px) {
+      .depoimentos figure {
+        position: relative;
+        bottom: 0px;
+        float: left;
+        margin-right: 25px; } }
+    @media screen and (max-width: 450px) {
+      .depoimentos figure {
+        float: none;
+        margin: auto;
+        margin-top: 25px; } }
 
 .contato .centro {
   padding-top: 130px; }
