@@ -338,7 +338,7 @@ header {
     line-height: 50px; }
     @media screen and (max-width: 1070px) {
       .banner h1 {
-        font-size: 35px; } }
+        font-size: 30px; } }
     @media screen and (max-width: 800px) {
       .banner h1 {
         max-width: 100%; } }
@@ -452,7 +452,11 @@ header {
         width: 50%; } }
     @media screen and (max-width: 500px) {
       .servicos li {
-        width: 100%; } }
+        width: 100%;
+        padding: 25px 0px 50px 0px; } }
+    @media screen and (max-width: 500px) {
+      .servicos li:last-child {
+        padding: 25px 0px 0px 0px; } }
     .servicos li:before {
       height: 60px;
       display: block;
@@ -626,7 +630,8 @@ header {
   box-sizing: border-box; }
   @media screen and (max-width: 1000px) {
     .contato .col {
-      width: 100%; } }
+      width: 100%;
+      padding: 0px; } }
 .contato input, .contato textarea {
   margin-bottom: 30px;
   padding: 15px;
@@ -696,6 +701,7 @@ footer {
   color: #fff;
   padding: 50px 25px;
   padding: 50px 25px;
-  color: #fff; }
+  color: #fff;
+  line-height: 25px; }
 
 /*# sourceMappingURL=style.css.map */

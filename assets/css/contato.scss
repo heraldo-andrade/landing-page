@@ -21,6 +21,7 @@
 		box-sizing: border-box;
 		@media screen and (max-width: 1000px) {
 		    width: $col-1;
+		    padding: 0px;
 		}
 	}
 	input, textarea{

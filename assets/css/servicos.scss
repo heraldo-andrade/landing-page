@@ -23,6 +23,12 @@
 		}
 		@media screen and (max-width: 500px) {
 			width: $col-1;
+			padding: 25px 0px 50px 0px;
+		}
+		&:last-child{
+			@media screen and (max-width: 500px) {
+				padding: 25px 0px 0px 0px;
+			}
 		}
 		&:before{
 			height:60px;
